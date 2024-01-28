@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/style.css">
+    <script src="https://kit.fontawesome.com/6895c8023a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div class="container-fluid p-0">
+      <div class="col ">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+            <div class="container-fluid" style="background-color: #333333;" data-bs-theme="dark">
+              <a href="index.html"><img class="mt-2" src="img/EpicGearHub.png" width="290px" alt=""></a>
+              <div class="collapse navbar-collapse " style="display: flex;" id="navbarSupportedContent">
+                <form class="d-flex" role="search" style= " margin-left: 110px; width: 600px; height: 50px;" >
+                  <input class="form-control me-2" type="search" style="background-color: white; color: black;" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                </form>
+            </div>
+            <div style="font-size: 25px; float: right; padding-right: 10px;">
+              <a href="page_cart.html" style="color: white;"><i class="fa-solid fa-cart-shopping me-3"></i></a>
+              <a href="user_login.html" style="color: white;"><i class="fa-regular fa-user"></i>
+                <b id="nameY">
+                <script>
+                    let name  = localStorage.getItem("login");
+                    document.querySelector("#nameY").innerHTML = name;
+                </script>
+              </b>
+            </a>
+      </div>
+            </div>
+            </nav>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0 " >
+              <div class="container-fluid " style="background-color: gray; ">
+                <div class="collapse navbar-collapse " id="navbarNav">
+                  <ul class="navbar-nav " >
+                    <li class="nav-item">
+                      <a class="nav-link font-monospace" style="color: white;" href="index.html">Trang chủ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link"  aria-current="page" style="color: white;" href="page_product.html">Sản Phẩm</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-monospace" style="color: white;" href="#">Giới Thiệu</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-monospace" style="color: white;" href="#">Liên Hệ</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link font-monospace" style="color: white;" href="#">Fanpage</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+
+
+          <!--  sản phẩm -->
+          <div class="container mt-5">
+            <div class="row">
+              <div class="col me-3">
+                <img src="/img/pc.jpg" id="img" width="650px" height="500px" alt=""><br>
+                <div class="col" id="album">
+                  <img src="" width="210px" height="130px" class="ps-3" alt="">
+                  <img src="" width="210px" height="130px" class="ps-3" alt="">
+                  <img src="" width="210px" height="130px" class="ps-3" alt="">
+                </div>
+              </div>
+              <div class="col leftbr">
+                <h2 id="name">PC GVN TITAN Plus i4070Ti</h2>
+                <h2 style="color: red;" id="price">77.000.000₫</h2>
+                <br>
+                <div class="row">
+                  <h4 id="brand"></h4>
+                  <div class="col" >
+                    <i class="fa-solid fa-microchip"></i> <b id="other1"></b>
+                  </div>
+                  <div class="col">
+                    <i class="fa-regular fa-floppy-disk"></i> <b id="other2"></b>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <i class="fa-solid fa-memory"></i> <b id="other3"></b>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-sd-card"></i> <b id="other4"></b>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col">
+                    <i class="fa-solid fa-laptop-code"></i> <b id="other5"></b>
+                  </div>
+                  <div class="col">
+                    <i class="fa-solid fa-wifi"></i> <b id="other6"></b>
+                  </div>
+                </div>
+                <button type="button" onclick="addToCart()" class="btn btn-secondary btt mt-3"  style=" display: flex; float: left; width: 210px; height: 45px; font-size: 20px;">Thêm Vào Giỏ Hàng</button> <br>
+              </div>
+              <hr class="mt-3 mb-3">
+            </div>
+            <div class="row">
+              <div class="col">
+                <h2>Thông tin sản phẩm: </h2>
+                <p id="description"></p>
+                  <br>
+                  <i>Please note that this item is available for preorder and is expected to ship in November 2023, though 
+                    shipment dates are subject to change.</i>
+
+              </div>
+            </div>
+
+        </div>
+            
+
+
+
+
+
+
+
+            <div class="w-100 mb-5"></div>
+      
+      
+      <footer>
+        <div class="container-fluid" >
+          <div class="row" style="background-color: #333333;">
+            <div class="col hop">
+              <a href=""><img src="/img/tw-removebg-preview.png" width="20px" alt=""></a>
+              <a href=""><img src="/img/dc-removebg-preview.png" width="50px" alt="" ></a>
+              <a href=""><img src="/img/fb.png" width="20px" alt=""></a>
+            </div>
+            <div>
+               <p style="color: white; font-size: 13px;" class="mt-3 ms-5">
+                Copyright 2023 Bensussen Deutsch & Associates, LLC. All rights reserved. Use of this site is subject to the BDA Terms of Use.
+                <br>
+                This site is operated by BDA, LLC. All logos, trademarks and brands are property of their respective owners.
+               </p>
+               <p style="color: white; font-size: 13px;" class="mt-3 ms-5">
+                © 2023 Sony Interactive Entertainment Inc. "", "", "", "" 
+                and "DualSense" are registered trademarks or trademarks of Sony Interactive Entertainment Inc.
+               </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+      
+      
+   </div>
+
+
+
+
+   <script src="/Publics/scrip/detail.js"></script>
+   <script src="/Publics/scrip/data.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

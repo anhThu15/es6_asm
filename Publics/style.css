@@ -1,0 +1,24 @@
+.nenNav{
+    background-color: #333333;
+    color: white;
+}
+.nenNav ul li a {
+    color: white;
+}
+.imgShow{
+    opacity: 0;
+    position: absolute;
+}
+.imgShow img{
+    width: 280px;
+}
+#vien :hover .imgShow{
+    opacity: 1;
+    transition: all ease .5s;
+}
+#vien2 {
+    height: 40px;
+}
+div#vien3 {
+    height: 90px;
+}

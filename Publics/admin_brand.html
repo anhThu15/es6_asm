@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.2-dist/style.css">
+    <script src="https://kit.fontawesome.com/6895c8023a.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="/Publics/style.css">
+    <title>Admin Site</title>
+</head>
+<body>
+  <div class="container-fluid p-0">
+    <div class="col ">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+          <div class="container-fluid" style="background-color: #333333;" data-bs-theme="dark">
+            <a href="index.html"><img class="mt-2" src="img/EpicGearHub.png" width="290px" alt=""></a>
+            <div class="collapse navbar-collapse " style="display: flex;" id="navbarSupportedContent">
+              <form class="d-flex" role="search" style= " margin-left: 110px; width: 600px; height: 50px;" >
+                <input class="form-control me-2" type="search" style="background-color: white; color: black;" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+              </form>
+          </div>
+          <!-- <div style="font-size: 25px; float: right; padding-right: 10px;">
+                  <a href="gh.html" style="color: white;"><i class="fa-solid fa-cart-shopping me-3"></i></a>
+                  <a href="ac.html" style="color: white;"><i class="fa-regular fa-user"></i></a>
+          </div> -->
+          </div>
+      </nav>
+      <div class="row">
+        <div class="col-2" >
+          <p style="position: relative; left: 20px; top: 10px;">
+            <button class="btn btn-primary nenNav" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+              <img src="https://i.gifer.com/origin/1e/1e6e2cf30e3c9876f00694e61627e421_w200.gif" width="30px" height="30px" alt="">
+            </button>
+          </p>
+          <div style="min-height: 120px;" >
+            <div class="collapse collapse-horizontal " id="collapseWidthExample">
+              <div class="card card-body nenNav" style="width: 250px;">
+                <ul class="nav flex-column">
+                  <li class="nav-item">
+                    <a class="nav-link active" href="admin.html"><i class="fa-solid fa-computer"></i> Sản Phẩm </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="admin_brand.html"><i class="fa-solid fa-shop"></i> Thương Hiệu</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="admin_user.html"><i class="fa-regular fa-user"></i> Người dùng</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html"><i class="fa-solid fa-house"></i> Quay lại trang chủ </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5">
+          <h1>Thương Hiệu 
+            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Thêm</button>
+          </h1>
+          <!-- Button to Open the Modal -->
+              
+              
+              <!-- The Modal -->
+              <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+              
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                      <h4 class="modal-title">Thêm Thương Hiệu </h4>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+              
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                      <form action="">
+                        <div class="mb-3 mt-3">
+                          <label class="form-label">Tên Thương Hiệu :</label>
+                          <input type="text" class="form-control" id="name" placeholder="Tên Thương Hiệu " name="name">
+                        </div>
+                        <button type="submit" onclick="event.preventDefault();addBrands()" class="btn btn-primary">Submit</button>
+                      </form>
+                    </div>
+              
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                    </div>
+              
+                  </div>
+                </div>
+              </div>
+          <table class="table ">
+            <thead>
+              <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Tên Thương Hiệu</th>
+                <th scope="col">Hành Động </th>
+              </tr>
+            </thead>
+            <tbody id="brand">
+
+            </tbody>
+          </table>
+        </div>
+      </div>
+  </div>
+  </div>
+
+  <!-- Button to Open the Modal -->
+
+<!-- The Modal -->
+<div class="modal" id="myModal2">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Sửa Sản Phẩm</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+        <form action="">
+          <div class="mb-3 mt-3">
+            <label class="form-label">Tên Thương Hiệu :</label>
+            <input type="hidden" id="idBrand">
+            <input type="text" class="form-control" id="editname" placeholder="Tên Thương Hiệu " name="name">
+          </div>
+          <button type="submit" onclick="event.preventDefault();updateBrand()" class="btn btn-primary">Submit</button>
+        </form>
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    <script src="/Publics/scrip/admin_brand.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

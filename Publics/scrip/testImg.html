@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="file" id="file-upload" accept=".jpg, .png" multiple required />
+
+    <script>
+
+        const arr = [];
+
+        const fileUpload = document.querySelector("#file-upload");
+
+        fileUpload.addEventListener("change", (e) => {
+        	const files = e.target.files;
+        	
+        	for(const file of files) {
+        		const {name, type, size, lastModified } = file;
+        		// Làm gì đó với các thông tin trên
+        		arr.push(file.name)
+        		console.log(file)
+                console.log(arr);
+        	}
+        })
+    </script>
+
+</body>
+</html>
