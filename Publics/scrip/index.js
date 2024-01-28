@@ -272,14 +272,21 @@ addToCart=(id)=>{
 }
 
 
-search=()=>{   
-    var searchText = document.querySelector("#search").value;
-    var searchUser = products.filter(value =>{
-      return value.name.toUpperCase().includes(searchText.toUpperCase());
-    })
-    // console.log(searchUser);
-    loadsp(searchUser);
+searchIndex=()=>{   
+  var searchText = document.getElementById("search").value;
+  console.log(searchText);
+  if(searchText.keyCode === 13){
+      searchText =""
   }
+  axios.get('http://localhost:3000/products')
+  .then(res=>{
+      key=res.data.filter(s=>{
+          return s.name.toUpperCase().includes(searchText.toUpperCase())
+          // console.log(s.name);
+      })
+      renderSp(key);
+  })
+}
 
 sapxep=()=>{
   var chon = document.querySelector("#sort").value;
