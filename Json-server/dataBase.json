@@ -370,14 +370,40 @@
   ],
   "carts": [
     {
-      "id": "1",
-      "name": "Anh Thư",
-      "price": 13213123123,
-      "soluong": 1,
-      "status": [
-        "active",
-        "deal"
-      ]
+      "id": "12",
+      "name": "Laptop Dell Inspiron 7506-5903SLV",
+      "img": [
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_6.png",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/1/1/11_33_5.jpg",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/1/0/10_32_3.jpg"
+      ],
+      "price": 27490000,
+      "quality": 1,
+      "status": "deal"
+    },
+    {
+      "id": "7",
+      "name": "Laptop Dell Inspiron 14 I7430-7374SLV CN29D",
+      "img": [
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_32__1_6.png",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_34__1_3.png",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_37__1_3.png"
+      ],
+      "price": 21490000,
+      "quality": 1,
+      "status": "active"
+    },
+    {
+      "id": "10",
+      "name": "Laptop Dell Vostro 3520 Y4G15",
+      "img": [
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_19__1_5.png",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_20__3_4.png",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_21__2_6.png"
+      ],
+      "price": 17490000,
+      "quality": 1,
+      "status": "active"
     }
   ]
 }
