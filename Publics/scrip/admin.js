@@ -284,7 +284,7 @@ addsp=()=>{
     }
     var newSp = {
         // id: products.length+1,
-        img: [img],
+        img: img.slpit(','),
         name : name,
         price: price,
         description : description,

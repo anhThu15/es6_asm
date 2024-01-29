@@ -359,6 +359,25 @@
       "password": "123456",
       "quyen": "admin",
       "id": "bca1"
+    },
+    {
+      "id": "e25c",
+      "name": "dada",
+      "email": "asda@gmail.com",
+      "password": "123",
+      "quyen": "user"
+    }
+  ],
+  "carts": [
+    {
+      "id": "1",
+      "name": "Anh Thư",
+      "price": 13213123123,
+      "soluong": 1,
+      "status": [
+        "active",
+        "deal"
+      ]
     }
   ]
 }
