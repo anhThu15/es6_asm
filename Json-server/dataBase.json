@@ -370,40 +370,67 @@
   ],
   "carts": [
     {
-      "id": "12",
-      "name": "Laptop Dell Inspiron 7506-5903SLV",
+      "id": "8",
+      "name": "MacBook Air 15 inch M2 2023 16GB 256GB | Chính hãng Apple",
       "img": [
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_6.png",
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/1/1/11_33_5.jpg",
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/1/0/10_32_3.jpg"
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/m/a/macbook-air-15-inch-m2-2023-16gb-256gb_1_.png",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_5_6_2.png",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_1__2_18_2.png"
       ],
-      "price": 27490000,
+      "price": 36290000,
       "quality": 1,
+      "status": "active"
+    },
+    {
+      "id": "5",
+      "name": "Laptop Asus Gaming ROG Zephyrus G16 GU603VU-N3898W",
+      "img": [
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_13_.png",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-gaming-rog-zephyrus-g16-gu603vu-n3898w-1.png",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-gaming-rog-zephyrus-g16-gu603vu-n3898w-2.png"
+      ],
+      "price": 38990000,
+      "quality": 1,
+      "status": "active"
+    },
+    {
+      "id": "c2ea",
+      "name": "siu nhân",
+      "img": [
+        "https://kenh14cdn.com/thumb_w/650/2017/powerrangers0828131280jpg-8dd373-1280w-1-1490847186920.jpg"
+      ],
+      "price": "5000000000000",
+      "quality": 1,
+      "status": "active"
+    },
+    {
+      "id": "1",
+      "name": "Lenovo Ideapad Gaming 3 15ACH6 82K2027QVN",
+      "img": [
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_2_2.png",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_8__1_111.png",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_9__1_122.png"
+      ],
+      "price": 18990000,
+      "quality": 1,
+      "status": "active"
+    }
+  ],
+  "waitCarts": [
+    {
+      "id": "2ed9",
+      "name": "anh Thư",
+      "phone": "0398999249",
+      "address": "kha vạn cân",
+      "email": "thuntaps35657@fpt.edu.vn",
+      "price": "5.000.094.270.000đ",
+      "carts": [
+        "MacBook Air 15 inch M2 2023 16GB 256GB | Chính hãng Apple",
+        "Laptop Asus Gaming ROG Zephyrus G16 GU603VU-N3898W",
+        "siu nhân",
+        "Lenovo Ideapad Gaming 3 15ACH6 82K2027QVN"
+      ],
       "status": "deal"
-    },
-    {
-      "id": "7",
-      "name": "Laptop Dell Inspiron 14 I7430-7374SLV CN29D",
-      "img": [
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_32__1_6.png",
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_34__1_3.png",
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_37__1_3.png"
-      ],
-      "price": 21490000,
-      "quality": 1,
-      "status": "active"
-    },
-    {
-      "id": "10",
-      "name": "Laptop Dell Vostro 3520 Y4G15",
-      "img": [
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_19__1_5.png",
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_20__3_4.png",
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_21__2_6.png"
-      ],
-      "price": 17490000,
-      "quality": 1,
-      "status": "active"
     }
   ]
 }

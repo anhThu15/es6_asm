@@ -18,7 +18,7 @@
             <a href="index.html"><img class="mt-2" src="img/EpicGearHub.png" width="290px" alt=""></a>
             <div class="collapse navbar-collapse " style="display: flex;" id="navbarSupportedContent">
               <form class="d-flex" role="search" style= " margin-left: 110px; width: 600px; height: 50px;" >
-                <input class="form-control me-2" type="search" style="background-color: white; color: black;" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                <input class="form-control me-2" id="search" oninput="searchProduct();" type="text" style="background-color: white; color: black;" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
               </form>
           </div>
           <!-- <div style="font-size: 25px; float: right; padding-right: 10px;">
@@ -59,65 +59,23 @@
           </div>
         </div>
         <div class="col mt-5">
-          <h1>Người Dùng
-            <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Thêm</button>
-          </h1>
+          <h1>Đơn Hàng </h1>
           <!-- Button to Open the Modal -->
               
               
               <!-- The Modal -->
-              <div class="modal" id="myModal">
-                <div class="modal-dialog">
-                  <div class="modal-content">
-              
-                    <!-- Modal Header -->
-                    <div class="modal-header">
-                      <h4 class="modal-title">Thêm Người Dùng </h4>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-              
-                    <!-- Modal body -->
-                    <div class="modal-body">
-                      <form action="">
-                        <div class="mb-3 mt-3">
-                          <label class="form-label">Tên Người Dùng :</label>
-                          <input type="text" class="form-control" id="name" placeholder="Tên Người Dùng" name="name">
-                        </div>
-                        <div class="mb-3 mt-3">
-                          <label class="form-label">Email</label>
-                          <input type="email" class="form-control" id="email" placeholder="Email" name="email">
-                        </div>
-                        <div class="mb-3">
-                          <label  class="form-label">Mật Khẩu</label>
-                          <input type="password" class="form-control" id="pass" placeholder="Mật Khẩu" >
-                        </div>
-                        <div class="mb-3">
-                          <label class="form-label">Quyền</label>
-                          <input type="text" class="form-control" id="quyen" placeholder="Quyền">
-                        </div>
-                        <button type="submit" onclick="event.preventDefault();addUser()" class="btn btn-primary">Submit</button>
-                      </form>
-                    </div>
-              
-                    <!-- Modal footer -->
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                    </div>
-              
-                  </div>
-                </div>
-              </div>
+             
           <table class="table ">
             <thead>
               <tr>
-                <th scope="col">Id</th>
-                <th scope="col">Tên Người Dùng</th>
-                <th scope="col">Email</th>
-                <th scope="col">Password</th>
-                <th scope="col">Quyền</th>
+                <th scope="col">Id Đơn Hàng</th>
+                <th scope="col">Tên Khách hàng</th>
+                <th scope="col">Sản Phẩm</th>
+                <th scope="col">Tổng Giá</th>
+                <th scope="col">Hành Động</th>
               </tr>
             </thead>
-            <tbody id="user">
+            <tbody id="sp">
 
             </tbody>
           </table>
@@ -125,6 +83,7 @@
       </div>
   </div>
   </div>
+
   <!-- Button to Open the Modal -->
 
 <!-- The Modal -->
@@ -134,33 +93,44 @@
 
       <!-- Modal Header -->
       <div class="modal-header">
-        <h4 class="modal-title">Sửa Người Dùng</h4>
+        <h4 class="modal-title">Sửa Sản Phẩm</h4>
         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
       </div>
 
       <!-- Modal body -->
       <div class="modal-body">
         <form action="">
-          <form action="">
-            <div class="mb-3 mt-3">
-              <label class="form-label">Tên Người Dùng :</label>
-              <input type="hidden" id="id">
-              <input type="text" class="form-control" id="editname" placeholder="Tên Người Dùng" name="name">
-            </div>
-            <div class="mb-3 mt-3">
-              <label class="form-label">Email</label>
-              <input type="email" class="form-control" id="editemail" placeholder="Email" name="email">
-            </div>
-            <div class="mb-3">
-              <label  class="form-label">Mật Khẩu</label>
-              <input type="password" class="form-control" id="editpass" placeholder="Mật Khẩu" >
-            </div>
-            <div class="mb-3">
-              <label class="form-label">Quyền</label>
-              <input type="text" class="form-control" id="editquyen" placeholder="Quyền">
-            </div>
-            <button type="submit" onclick="event.preventDefault();updateUser()" class="btn btn-primary">Submit</button>
-          </form>
+          <div class="mb-3 mt-3">
+            <label class="form-label">Ảnh Sản Phẩm :</label>
+            <input type="text" class="form-control" id="editimg" placeholder="Url Ảnh" name="img">
+          </div>
+          <div class="mb-3 mt-3">
+            <label class="form-label">Tên Sản Phẩm :</label>
+            <input type="hidden" id="idsp"  >
+            <input type="text" class="form-control" id="editname" placeholder="Tên Sản Phẩm" name="name">
+          </div>
+          <div class="mb-3 mt-3">
+            <label class="form-label">Giá Sản Phẩm :</label>
+            <input type="number" class="form-control" id="editprice" placeholder="Giá Sản Phẩm" name="price">
+          </div>
+          <div class="mb-3">
+            <label  class="form-label">Mô Tả:</label>
+            <input type="text" class="form-control" id="editdescription" placeholder="Mô Tả" name="description">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Thương Hiệu</label>
+            <input type="text" class="form-control" id="editbrand" placeholder="Thương Hiệu" name="brand">
+          </div>
+          <div class="mb-3">
+            <label class="form-label">Khác</label>
+            <input type="text" class="form-control" id="editother" placeholder="Bộ xử lý (CPU):" name="other">
+            <input type="text" class="form-control" id="editother1" placeholder="Card đồ họa (GPU):" name="other1">
+            <input type="text" class="form-control" id="editother2" placeholder="RAM:" name="other2">
+            <input type="text" class="form-control" id="editother3" placeholder="Ổ đĩa cứng:" name="other3">
+            <input type="text" class="form-control" id="editother4" placeholder="Màn hình:" name="other4">
+            <input type="text" class="form-control" id="editother5" placeholder="Tần số hz: " name="other5">
+          </div>
+          <button type="submit" onclick="event.preventDefault();updatesp()" class="btn btn-primary">Submit</button>
         </form>
       </div>
 
@@ -173,7 +143,8 @@
   </div>
 </div>
 
-    <script src="/Publics/scrip/admin_user.js"></script>
+    <script src="/Publics/scrip/admin_deal.js"></script>
     <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

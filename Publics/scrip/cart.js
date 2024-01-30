@@ -50,17 +50,17 @@ updateCart=()=>{
 updateCart();
 
 
-// doiSL=(id, input)=>{
-//     console.log(id,input.value);
-//     for (var gh of carts) {
-//         if(gh.id == id){
-//             gh.soluong = Number(input.value);
-//             break;
-//         }
-//     }
-//     localStorage.setItem('carts',JSON.stringify(carts));
-//     updateCart();
-// }
+doiSL=(id, input)=>{
+    console.log(id,input.value);
+    for (var gh of carts) {
+        if(gh.id == id){
+            gh.soluong = Number(input.value);
+            break;
+        }
+    }
+    localStorage.setItem('carts',JSON.stringify(carts));
+    updateCart();
+}
 
 xoaSP=(id)=>{
     // var sp = carts.findIndex(i => i.id === id);
