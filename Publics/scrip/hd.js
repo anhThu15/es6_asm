@@ -63,6 +63,7 @@ renderCart=()=>{
             .then(res=>{
                 console.log(waitCart);
             })
+            
           }
     })
     

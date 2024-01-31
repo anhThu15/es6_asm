@@ -297,24 +297,6 @@
         "144 Hz"
       ],
       "description": "Laptop Dell Vostro 3520 Y4G15 được đánh giá cao về cấu hình mạnh mẽ nhờ chip i7 gen 12 kết hợp cùng thanh RAM DDR4 8GB và ổ cứng SSD dung lượng cao. Bên cạnh đó, màn hình của laptop cũng có khả năng hiển thị Full HD chuyên nghiệp qua tần số quét 120Hz. Dựa trên hệ điều hành Windows, dòng laptop Dell Vostro này cung cấp đa dạng tiện ích với giao diện thân thiện để người dùng thuận tiện thao tác. Laptop Dell Vostro 3520 Y4G15 – Chuyên nghiệp cho giới văn phòng Laptop Dell Vostro 3520 Y4G15 sở hữu diện mạo đẹp mắt và hiệu năng xử lý vượt trội. Phiên bản hứa hẹn sẽ giải quyết “tất tần tật” mọi nhu cầu làm việc, giải trí của bạn một cách hoàn hảo, đặc biệt là những tác vụ văn phòng. RAM 8GB chuẩn DDR4, ổ cứng 512GB  Laptop Dell Vostro 3520 Y4G15 áp dụng cơ chế RAM DDR4 với dung lượng 8GB. Cùng với đó là tốc độ BUS RAM 2666 MHz cũng tương đối cao để bạn có thể tiết kiệm thời gian truy xuất dữ liệu."
-    },
-    {
-      "id": "c2ea",
-      "img": [
-        "https://kenh14cdn.com/thumb_w/650/2017/powerrangers0828131280jpg-8dd373-1280w-1-1490847186920.jpg"
-      ],
-      "name": "siu nhân",
-      "price": "5000000000000",
-      "description": "phim hay lắm ",
-      "brand": "siêu nhân",
-      "other": [
-        "a",
-        "b",
-        "c",
-        "d",
-        "e",
-        "f"
-      ]
     }
   ],
   "users": [
@@ -366,50 +348,26 @@
       "email": "asda@gmail.com",
       "password": "123",
       "quyen": "user"
+    },
+    {
+      "id": "02c4"
+    },
+    {
+      "id": "d95a",
+      "name": "bla bla",
+      "email": "bla@gmail.com",
+      "password": "123456",
+      "quyen": "user"
     }
   ],
   "carts": [
     {
-      "id": "8",
-      "name": "MacBook Air 15 inch M2 2023 16GB 256GB | Chính hãng Apple",
+      "id": "3",
+      "name": "Laptop Lenovo Yoga Duet 7 13ITL6 82MA009NVN",
       "img": [
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/m/a/macbook-air-15-inch-m2-2023-16gb-256gb_1_.png",
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_5_6_2.png",
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_1__2_18_2.png"
-      ],
-      "price": 36290000,
-      "quality": 1,
-      "status": "active"
-    },
-    {
-      "id": "5",
-      "name": "Laptop Asus Gaming ROG Zephyrus G16 GU603VU-N3898W",
-      "img": [
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_13_.png",
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-gaming-rog-zephyrus-g16-gu603vu-n3898w-1.png",
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/l/a/laptop-asus-gaming-rog-zephyrus-g16-gu603vu-n3898w-2.png"
-      ],
-      "price": 38990000,
-      "quality": 1,
-      "status": "active"
-    },
-    {
-      "id": "c2ea",
-      "name": "siu nhân",
-      "img": [
-        "https://kenh14cdn.com/thumb_w/650/2017/powerrangers0828131280jpg-8dd373-1280w-1-1490847186920.jpg"
-      ],
-      "price": "5000000000000",
-      "quality": 1,
-      "status": "active"
-    },
-    {
-      "id": "1",
-      "name": "Lenovo Ideapad Gaming 3 15ACH6 82K2027QVN",
-      "img": [
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_d_i_2_2.png",
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_8__1_111.png",
-        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/t/e/text_ng_n_9__1_122.png"
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/g/a/gaming_003_3__3.png",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/f/g/fgege.jpg",
+        "https://cdn2.cellphones.com.vn/insecure/rs:fill:0:358/q:80/plain/https://cellphones.com.vn/media/catalog/product/h/k/hkgk.jpg"
       ],
       "price": 18990000,
       "quality": 1,
@@ -418,17 +376,27 @@
   ],
   "waitCarts": [
     {
-      "id": "2ed9",
-      "name": "anh Thư",
-      "phone": "0398999249",
-      "address": "kha vạn cân",
-      "email": "thuntaps35657@fpt.edu.vn",
-      "price": "5.000.094.270.000đ",
+      "id": "b2c2",
+      "name": "Anh Thư",
+      "phone": "0231465465",
+      "address": "quận 12",
+      "email": "thu7anh@gmail.com",
+      "price": "16.390.000đ",
       "carts": [
-        "MacBook Air 15 inch M2 2023 16GB 256GB | Chính hãng Apple",
-        "Laptop Asus Gaming ROG Zephyrus G16 GU603VU-N3898W",
-        "siu nhân",
-        "Lenovo Ideapad Gaming 3 15ACH6 82K2027QVN"
+        "Laptop Asus TUF GAMING F15 FX506HF-HN014W"
+      ],
+      "status": "waits"
+    },
+    {
+      "id": "d811",
+      "name": "test1",
+      "phone": "0398999249",
+      "address": "quận 12",
+      "email": "test@gmail.com",
+      "price": "35.380.000đ",
+      "carts": [
+        "Laptop Asus TUF GAMING F15 FX506HF-HN014W",
+        "Laptop Lenovo Yoga Duet 7 13ITL6 82MA009NVN"
       ],
       "status": "deal"
     }

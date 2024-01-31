@@ -230,10 +230,10 @@ loadSp=()=>{
 }
 loadSp();
 
-var carts =[];
-if( localStorage.getItem('carts') != null ){
-    carts = JSON.parse(localStorage.getItem('carts'))
-}
+// var carts =[];
+// if( localStorage.getItem('carts') != null ){
+//     carts = JSON.parse(localStorage.getItem('carts'))
+// }
 // document.querySelector("#sl").innerText = carts.length;
 
 addToCart=(id)=>{

@@ -32,7 +32,7 @@ updateCart=()=>{
                 <div class="col-6 col-sm-3 row">
                 <h1>${cart.price.toLocaleString()}₫</h1>
                 <input type="number" onchange="doiSL(${cart.id}, this)" value="${cart.quality}" name="" id="">
-                <button type="button" onclick="xoaSP(${cart.id})" class="btn btn-secondary btt ">Xóa</button>
+                <button type="button" onclick="xoaSP('${cart.id}')" class="btn btn-secondary btt ">Xóa</button>
                 </div>
                 </div>
                 </div>

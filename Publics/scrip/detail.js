@@ -211,40 +211,38 @@ axios.get(`http://localhost:3000/products/${id}`)
  }
  // document.querySelector("#sl").innerText = carts.length;
  
- addToCart=(id)=>{
-     // console.log(id);
-     // console.log(cart);
-     var coSp = false;
-     var tangsl = 0;
-     for (var item of carts) {
-         if(item.id == id){
-             coSp = true;
-             break;
-         }
-         tangsl++;
-     }
- 
-     if( coSp ){
-         carts[tangsl].soluong++;
-     }else{
-         for (var sp of products) {
-             if(sp.id == id){
-                 carts.push({
-                     id: sp.id,
-                     name : sp.name,
-                     price: sp.price,
-                     img: sp.img,
-                     other : sp.other,
-                     soluong: 1
-                 });
-                 break;
-             }
-         }
-     }
- 
-     // lu6 vào giỏ hàng bằng localSorage
-     localStorage.setItem('carts', JSON.stringify(carts));
- }
+ aaddToCart=(id)=>{
+    // console.log(id);
+    // console.log(cart);
+    // var coSp = false;
+    // var tangsl = 0;
+    // for (var item of carts) {
+    //     if(item.id == id){
+    //         coSp = true;
+    //         break;
+    //     }
+    //     tangsl++;
+    // }
+    // if( coSp ){
+    //     carts[tangsl].soluong++;
+    // }else{
+      axios.get(`http://localhost:3000/products/${id}`)
+      .then(res=>{
+        console.log(res.data);
+           var newCart = {
+              id : res.data.id,
+              name : res.data.name,
+              img : res.data.img,
+              price : res.data.price,
+              quality : 1,
+              status : 'active'
+           }
+          axios.post('http://localhost:3000/carts',newCart)
+          .then(res=>{
+             console.log(carts);
+          })
+      })
+}
  
  doiAnh=(id)=>{
     // console.log(id);
